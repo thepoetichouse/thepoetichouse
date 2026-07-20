@@ -104,3 +104,10 @@ nav a:hover {
     background: white;
     color: #3b2f2f;
 }
+main section:first-child {
+    background: linear-gradient(135deg, #3b2f2f, #6d4c41);
+    color: white;
+    padding: 70px 40px;
+    border-radius: 20px;
+    text-align: center;
+}

@@ -6,3 +6,20 @@ body {
     font-family: Georgia, serif;
     line-height: 1.7;
 }
+
+header {
+    background: #3b2f2f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+}

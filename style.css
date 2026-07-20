@@ -72,3 +72,9 @@ article {
     border-radius: 12px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}

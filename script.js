@@ -309,3 +309,41 @@ blur.style.transform="translate(-50%,-50%) scale(1)";
 });
 
 });
+/*=========================
+3D CARD EFFECT
+=========================*/
+
+document.querySelectorAll(".author-card,.book-card")
+
+.forEach(card=>{
+
+card.addEventListener("mousemove",(e)=>{
+
+const rect=card.getBoundingClientRect();
+
+const x=e.clientX-rect.left;
+
+const y=e.clientY-rect.top;
+
+const rotateY=(x-rect.width/2)/18;
+
+const rotateX=(rect.height/2-y)/18;
+
+card.style.transform=
+
+`perspective(900px)
+rotateX(${rotateX}deg)
+rotateY(${rotateY}deg)
+translateY(-12px)`;
+
+});
+
+card.addEventListener("mouseleave",()=>{
+
+card.style.transform=
+
+"perspective(900px) rotateX(0) rotateY(0)";
+
+});
+
+});

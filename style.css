@@ -1806,3 +1806,74 @@ margin:auto;
 margin-bottom:30px;
 
 }
+/*=====================================
+AUTHOR BIOGRAPHY
+======================================*/
+
+.author-biography{
+
+padding:100px 0;
+
+}
+
+.bio-card{
+
+display:grid;
+
+grid-template-columns:300px 1fr;
+
+gap:50px;
+
+align-items:center;
+
+background:#fff;
+
+padding:40px;
+
+border-radius:25px;
+
+box-shadow:var(--shadow);
+
+}
+
+.bio-card img{
+
+width:100%;
+
+border-radius:20px;
+
+object-fit:cover;
+
+}
+
+.bio-content h3{
+
+font-size:34px;
+
+margin-bottom:20px;
+
+color:var(--primary-dark);
+
+font-family:'Playfair Display',serif;
+
+}
+
+.bio-content p{
+
+font-size:18px;
+
+line-height:2;
+
+margin-bottom:20px;
+
+}
+
+@media(max-width:900px){
+
+.bio-card{
+
+grid-template-columns:1fr;
+
+}
+
+}

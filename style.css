@@ -54,6 +54,14 @@ background:#0F4C81;
 
 color:white;
 
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+box-shadow:0 4px 20px rgba(0,0,0,.15);
+
 }
 
 .navbar{

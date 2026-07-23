@@ -99,3 +99,30 @@ text-align:center;
 padding:30px;
 margin-top:60px;
 }
+.featured-authors{
+margin-top:70px;
+}
+
+.author-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.author-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.author-card:hover{
+transform:translateY(-8px);
+}
+
+.author-card h3{
+margin-bottom:10px;
+color:#2f241d;
+}

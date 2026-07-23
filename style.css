@@ -852,3 +852,54 @@ font-size:22px;
 }
 
 }
+/* ==========================
+   DARK MODE
+========================== */
+
+.dark-mode{
+
+background:#121212;
+
+color:white;
+
+}
+
+.dark-mode .author-card,
+.dark-mode .book-card,
+.dark-mode .poem-card,
+.dark-mode .story-card,
+.dark-mode .newsletter{
+
+background:#1E1E1E;
+
+color:white;
+
+}
+
+.dark-mode-btn{
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#F4C542;
+
+cursor:pointer;
+
+font-size:22px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.3);
+
+z-index:999;
+
+}

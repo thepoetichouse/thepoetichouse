@@ -1400,8 +1400,6 @@ CUSTOM CURSOR
 
 body{
 
-cursor:none;
-
 }
 
 .cursor{
@@ -1450,16 +1448,6 @@ transition:.18s;
 
 }
 
-a,
-button,
-.author-card,
-.book-card,
-.poem-card,
-.story-card{
-
-cursor:none;
-
-}
 /*=====================================
 CINEMATIC HERO
 ======================================*/

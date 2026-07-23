@@ -228,3 +228,32 @@ console.log("Welcome to The Poetic House");
 /*========================
 END
 =========================*/
+/*========================
+MOBILE MENU
+=========================*/
+
+const toggle=document.getElementById("menuToggle");
+
+const mobile=document.getElementById("mobileMenu");
+
+if(toggle){
+
+toggle.addEventListener("click",()=>{
+
+mobile.classList.toggle("active");
+
+});
+
+}
+
+document.querySelectorAll(".mobile-menu a")
+
+.forEach(link=>{
+
+link.onclick=()=>{
+
+mobile.classList.remove("active");
+
+};
+
+});

@@ -126,3 +126,8 @@ transform:translateY(-8px);
 margin-bottom:10px;
 color:#2f241d;
 }
+.hero-note{
+margin-top:20px;
+font-size:18px;
+opacity:.8;
+}

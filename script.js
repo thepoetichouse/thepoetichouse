@@ -3,19 +3,21 @@ THE POETIC HOUSE v4.0
 ====================================*/
 
 /* PAGE LOADED */
-window.addEventListener("load", () => {
+window.addEventListener("load", function () {
 
     const loader = document.getElementById("loader");
 
-    if (loader) {
+    setTimeout(function () {
 
-        setTimeout(() => {
+        loader.classList.add("hide");
 
-            loader.style.display = "none";
+    },1800);
 
-        }, 1800);
+    setTimeout(function(){
 
-    }
+        loader.remove();
+
+    },2600);
 
 });
 

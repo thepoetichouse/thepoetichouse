@@ -108,3 +108,66 @@ card.style.transition="all .8s ease";
 observer.observe(card);
 
 });
+/* ==========================
+   Back To Top Button
+========================== */
+
+const topButton=document.createElement("button");
+
+topButton.innerHTML="⬆";
+
+topButton.className="top-btn";
+
+document.body.appendChild(topButton);
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>400){
+
+topButton.style.display="block";
+
+}else{
+
+topButton.style.display="none";
+
+}
+
+});
+
+topButton.addEventListener("click",()=>{
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+});
+
+/* ==========================
+   Reading Progress Bar
+========================== */
+
+const progress=document.createElement("div");
+
+progress.className="progress-bar";
+
+document.body.prepend(progress);
+
+window.addEventListener("scroll",()=>{
+
+const totalHeight=
+
+document.documentElement.scrollHeight-
+
+window.innerHeight;
+
+const progressWidth=
+
+(window.pageYOffset/totalHeight)*100;
+
+progress.style.width=progressWidth+"%";
+
+});

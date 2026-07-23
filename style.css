@@ -903,3 +903,72 @@ box-shadow:0 8px 20px rgba(0,0,0,.3);
 z-index:999;
 
 }
+/* ==========================
+   TOP BUTTON
+========================== */
+
+.top-btn{
+
+position:fixed;
+
+right:20px;
+
+bottom:90px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#0F4C81;
+
+color:white;
+
+font-size:22px;
+
+cursor:pointer;
+
+display:none;
+
+box-shadow:0 8px 20px rgba(0,0,0,.3);
+
+transition:.3s;
+
+z-index:999;
+
+}
+
+.top-btn:hover{
+
+background:#F4C542;
+
+color:#0F4C81;
+
+}
+
+/* ==========================
+   PROGRESS BAR
+========================== */
+
+.progress-bar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:0%;
+
+height:5px;
+
+background:#F4C542;
+
+z-index:9999;
+
+transition:width .1s linear;
+
+}

@@ -347,3 +347,42 @@ card.style.transform=
 });
 
 });
+/*=========================
+CUSTOM CURSOR
+==========================*/
+
+const cursor = document.querySelector(".cursor");
+const blur = document.querySelector(".cursor-blur");
+
+if (cursor && blur) {
+
+    window.addEventListener("mousemove", (e) => {
+
+        cursor.style.left = e.clientX + "px";
+        cursor.style.top = e.clientY + "px";
+
+        blur.style.left = e.clientX + "px";
+        blur.style.top = e.clientY + "px";
+
+    });
+
+    document.querySelectorAll("a, button, .author-card, .book-card, .poem-card, .story-card")
+    .forEach(item => {
+
+        item.addEventListener("mouseenter", () => {
+
+            cursor.style.transform = "translate(-50%, -50%) scale(2)";
+            blur.style.transform = "translate(-50%, -50%) scale(2.5)";
+
+        });
+
+        item.addEventListener("mouseleave", () => {
+
+            cursor.style.transform = "translate(-50%, -50%) scale(1)";
+            blur.style.transform = "translate(-50%, -50%) scale(1)";
+
+        });
+
+    });
+
+}

@@ -53,3 +53,58 @@ alert("आपने खोजा : "+value);
 });
 
 }
+/* ==========================
+   Dark Mode
+========================== */
+
+const darkButton=document.createElement("button");
+
+darkButton.innerHTML="🌙";
+
+darkButton.className="dark-mode-btn";
+
+document.body.appendChild(darkButton);
+
+darkButton.addEventListener("click",()=>{
+
+document.body.classList.toggle("dark-mode");
+
+});
+
+/* ==========================
+   Fade Animation
+========================== */
+
+const cards=document.querySelectorAll(
+
+".author-card,.book-card,.poem-card,.story-card"
+
+);
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.opacity="1";
+
+entry.target.style.transform="translateY(0)";
+
+}
+
+});
+
+});
+
+cards.forEach(card=>{
+
+card.style.opacity="0";
+
+card.style.transform="translateY(40px)";
+
+card.style.transition="all .8s ease";
+
+observer.observe(card);
+
+});

@@ -201,7 +201,13 @@ border:none;
 border-radius:10px;
 
 font-size:18px;
+box-shadow:0 12px 30px rgba(0,0,0,.15);
 
+outline:none;
+
+background:white;
+
+color:#0F4C81;
 }
 
 .search-box button{
@@ -221,7 +227,7 @@ cursor:pointer;
 font-weight:bold;
 
 transition:.3s;
-
+box-shadow:0 10px 25px rgba(0,0,0,.20);
 }
 
 .search-box button:hover{

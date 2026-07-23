@@ -135,6 +135,13 @@ max-width:1200px;
 margin:auto;
 
 padding:90px 25px;
+background:linear-gradient(rgba(15,76,129,.85),rgba(15,76,129,.85));
+
+border-radius:24px;
+
+margin-top:40px;
+
+box-shadow:0 20px 50px rgba(0,0,0,.15);
 
 text-align:center;
 
@@ -143,6 +150,7 @@ text-align:center;
 .hero h2{
 
 font-size:54px;
+letter-spacing:1px;
 
 color:#F4C542;
 

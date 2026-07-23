@@ -323,7 +323,8 @@ position:relative;
 }
 
 .hero-content{
-
+position:relative;
+z-index:5;
 max-width:900px;
 
 }

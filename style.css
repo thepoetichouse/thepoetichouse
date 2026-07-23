@@ -1777,3 +1777,32 @@ transition:.7s;
 left:120%;
 
 }
+/*=====================================
+AUTHOR HERO
+======================================*/
+
+.author-hero{
+
+min-height:90vh;
+
+}
+
+.author-photo{
+
+width:220px;
+
+height:220px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:6px solid var(--gold);
+
+box-shadow:0 0 40px rgba(200,169,106,.35);
+
+margin:auto;
+
+margin-bottom:30px;
+
+}

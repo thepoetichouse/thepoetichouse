@@ -257,3 +257,16 @@ mobile.classList.remove("active");
 };
 
 });
+/*=========================
+PREMIUM LOADER
+==========================*/
+
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+document.getElementById("loader").classList.add("hide");
+
+},1800);
+
+});

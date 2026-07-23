@@ -1459,3 +1459,161 @@ button,
 cursor:none;
 
 }
+/*=====================================
+CINEMATIC HERO
+======================================*/
+
+.hero{
+
+overflow:hidden;
+
+animation:heroZoom 18s ease-in-out infinite alternate;
+
+}
+
+@keyframes heroZoom{
+
+0%{
+
+background-size:100%;
+
+}
+
+100%{
+
+background-size:112%;
+
+}
+
+}
+
+
+/*=====================================
+FLOATING PARTICLES
+======================================*/
+
+.particles{
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+top:0;
+
+left:0;
+
+overflow:hidden;
+
+pointer-events:none;
+
+}
+
+.particles span{
+
+position:absolute;
+
+display:block;
+
+width:8px;
+
+height:8px;
+
+border-radius:50%;
+
+background:rgba(200,169,106,.45);
+
+animation:float 16s linear infinite;
+
+}
+
+.particles span:nth-child(1){
+
+left:8%;
+top:90%;
+animation-delay:0s;
+
+}
+
+.particles span:nth-child(2){
+
+left:18%;
+top:100%;
+animation-delay:2s;
+
+}
+
+.particles span:nth-child(3){
+
+left:32%;
+top:95%;
+animation-delay:5s;
+
+}
+
+.particles span:nth-child(4){
+
+left:46%;
+top:100%;
+animation-delay:1s;
+
+}
+
+.particles span:nth-child(5){
+
+left:62%;
+top:94%;
+animation-delay:3s;
+
+}
+
+.particles span:nth-child(6){
+
+left:74%;
+top:100%;
+animation-delay:6s;
+
+}
+
+.particles span:nth-child(7){
+
+left:88%;
+top:96%;
+animation-delay:4s;
+
+}
+
+.particles span:nth-child(8){
+
+left:96%;
+top:100%;
+animation-delay:7s;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0) scale(1);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh) scale(2);
+
+opacity:0;
+
+}
+
+}

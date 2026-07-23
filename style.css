@@ -131,3 +131,24 @@ margin-top:20px;
 font-size:18px;
 opacity:.8;
 }
+.hero-buttons{
+margin-top:30px;
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.hero-buttons a{
+background:white;
+color:#2f241d;
+text-decoration:none;
+padding:12px 22px;
+border-radius:8px;
+font-weight:bold;
+transition:.3s;
+}
+
+.hero-buttons a:hover{
+background:#d8c3a5;
+}

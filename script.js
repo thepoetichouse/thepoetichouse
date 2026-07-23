@@ -4,14 +4,19 @@ THE POETIC HOUSE v4.0
 
 /* PAGE LOADED */
 window.addEventListener("load", () => {
-    document.body.classList.add("loaded");
 
     const loader = document.getElementById("loader");
+
     if (loader) {
+
         setTimeout(() => {
-            loader.classList.add("hide");
+
+            loader.style.display = "none";
+
         }, 1800);
+
     }
+
 });
 
 /* SMOOTH SCROLL */
